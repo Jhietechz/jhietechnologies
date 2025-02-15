@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+.about{
+  color: rgb(100, 245, 4);
+}
+.card-body h3{
+  color: rgb(54, 54, 161);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.card-body p{
+  color: rgb(16, 252, 47);
+  font-family: Arial, Helvetica, sans-serif;
+}

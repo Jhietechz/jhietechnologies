@@ -1,0 +1,12 @@
+#Node modules
+node_modules/
+#Environment variables
+.env 
+#log files
+.log
+#database files
+.sqlite
+.db 
+#system files
+.DS_Store
+Thums.db
