@@ -1,7 +1,7 @@
 const mysql = require("mysql");
 const express = require("express");
 const cors = require("cors");
-app.use(cors({origin: "https://jhietechnologies.netlify.app/"}));
+app.use(cors({origin: "https://jhietechnologies.netlify.app"}));
 
 
 const app = express();
