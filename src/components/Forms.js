@@ -10,7 +10,7 @@ const Forms = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await fetch('http://localhost:3001/api/users', {
+        await fetch('https://jhietechnologies-2.onrender.com/api/users', {
             method: 'POST',
             headers: { 
               'Content-Type': 'application/json' },
