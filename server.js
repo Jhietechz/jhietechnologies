@@ -1,4 +1,6 @@
 const mysql = require("mysql");
+const db_url = new 
+    URL(process.env.MYSQL_URL);
 const express = require("express");
 const cors = require("cors");
 app.use(cors({origin: "*"}));
