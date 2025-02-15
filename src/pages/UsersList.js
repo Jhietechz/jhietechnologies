@@ -26,7 +26,7 @@ function UsersList() {
     }, []);
 
     useEffect(() => {
-        fetch("http://https://jhietechnologies.onrender.com/api/messages")
+        fetch("https://jhietechnologies.onrender.com/api/messages")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch messages");
