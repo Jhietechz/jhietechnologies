@@ -1,17 +1,16 @@
 const mysql = require("mysql");
-const db_url = new 
-    URL(process.env.DB_URL);
-const cors = require("cors");
+const db_url = new
+URL(process.env.DB_URL);
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
-
-
-app.listen(PORT, () => console.log('Server running on port ${PORT}'));
-
+const cors = require("cors");
 app.use(cors({origin: "https://jhietechnologies.netlify.app",
               methods:"GET, POST, PUT, DELETE",
               credentials: true}));
+app.listen(PORT, () => console.log('Server running on port ${PORT}'));
+
+
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "https://jhietechnologies.netlify.app");
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
@@ -29,14 +28,13 @@ app.use(express.json()); // Ensure JSON parsing is enabled
 
 // Database connection
 const db = mysql.createConnection({
-    host: "process.env.DB_HOST",
-    user: "process.env.DB_USER",
-    password: "process.env.DB_PASS",
-    database: "process.env.DB_NAME",
-    port: "process.env.DB_PORT",
+    host: "process.env.MSQLHOST",
+    user: "process.env.MSQLUSER",
+    password: "process.env.MYSQLPASSWORD",
+    database: "process.env.MYSQLDATABASE",
+    port: "process.env.MYSQLPORT",
     ssl: {
-        rejectUnauthorized: true
-    }
+        rejectUnauthorized: true }
 });
 
 db.connect((err) => {
