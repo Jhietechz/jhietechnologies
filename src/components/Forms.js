@@ -23,10 +23,10 @@ const Forms = () => {
 <form className="row g-3" onSubmit={handleSubmit}style={{ marginTop:"350px",position:"relative"}}>
   <div className="col-md-3">
     <label className="form-label">Full name</label>
-    <input type="text" className="form-control" placeholder="Your Name" id="name" value={name} onChange={(e) => setName(e.target.value)} required/>
+    <input type="text" className="htmlForm-control" placeholder="Your Name" id="name" value={name} onChange={(e) => setName(e.target.value)} required/>
   </div>
   <div className="col-md-3">
-    <label for="inputPassword4" className="form-label">Email</label>
+    <label htmlFor="inputPassword4" className="form-label">Email</label>
     <input type="email" className="form-control" placeholder="Your Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
   </div>
   <div className="col-md-2">
