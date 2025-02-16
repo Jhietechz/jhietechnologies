@@ -8,7 +8,7 @@ function UsersList() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("https://jhietechnologies.onrender.com/api/users")
+        fetch("https://jhietechnologies-3.onrender.com/api/users")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch users");
@@ -26,7 +26,7 @@ function UsersList() {
     }, []);
 
     useEffect(() => {
-        fetch("https://jhietechnologies.onrender.com/api/messages")
+        fetch("https://jhietechnologies-3.onrender.com/api/messages")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch messages");
