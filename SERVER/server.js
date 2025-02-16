@@ -9,7 +9,9 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log('Server running on port ${PORT}'));
 
-app.use(cors({origin: "https://jhietechnologies.netlify.app", credentials: true}));
+app.use(cors({origin: "https://jhietechnologies.netlify.app",
+              methods:"GET, POST, PUT, DELETE",
+              credentials: true}));
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "https://your-netlify-site.netlify.app");
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
