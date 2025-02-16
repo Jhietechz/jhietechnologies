@@ -22,8 +22,8 @@ const Contact = () => {
 <div style={{ marginTop:"350px",position:"relative"}}>
             <form onSubmit={handleSubmit} >
                 {/* /* <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} required /> */}
-                <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} required /> 
-                <textarea placeholder="Your message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
+                <input type="text" placeholder="Name" id="name" value={name} onChange={(e) => setName(e.target.value)} required /> 
+                <textarea placeholder="Your message" id="message" value={message} onChange={(e) => setMessage(e.target.value)} required></textarea>
                 <button type="submit">Send</button>
             </form>
             </div>
