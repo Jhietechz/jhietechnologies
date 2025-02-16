@@ -34,7 +34,9 @@ const db = mysql.createConnection({
     password: "process.env.DB_PASS",
     database: "process.env.DB_NAME",
     port: "process.env.DB_PORT",
-    
+    ssl: {
+        rejectUnauthorized: true
+    }
 });
 
 db.connect((err) => {
@@ -121,3 +123,4 @@ app.post("/api/messages", (req, res) => {
 app.listen(3001, () => {
     console.log("Server running on port 3001");
 });
+module.export = db;
