@@ -9,7 +9,7 @@ const Contact = () => {
     
         const handleSubmit = async (e) => {
             e.preventDefault();
-            await fetch('https://jhietechnologies-2.onrender.com/api/messages',
+            await fetch('https://jhietechnologies-3.onrender.com/api/messages',
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
