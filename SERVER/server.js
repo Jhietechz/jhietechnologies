@@ -2,8 +2,6 @@ const mysql = require("mysql");
 app.use(express.json());
 const express = require("express");
 const app = express();
-const db_url = new
-URL(process.env.MYSQL_URL);
 const PORT = process.env.PORT || 10100;
 const cors = require("cors");
 
