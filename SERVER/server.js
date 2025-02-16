@@ -1,6 +1,6 @@
 const mysql = require("mysql");
 const db_url = new
-URL(process.env.DB_URL);
+URL(process.env.MYSQL_URL);
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
