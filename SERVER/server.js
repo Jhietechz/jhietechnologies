@@ -11,7 +11,7 @@ app.options("*", cors(corsOptions));
 app.use(cors({origin: "https://jhietechnologies.netlify.app",
               methods:"GET, POST, PUT, DELETE",
               credentials: true}));
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, '0.0.0.0' () => console.log(`Server running on port ${PORT}`));
 
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "https://jhietechnologies.netlify.app");
