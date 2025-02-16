@@ -6,7 +6,7 @@ function UserProfile({ userId }) {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(`https://jhietechnologies-2.onrender.com/api/users/${userId}`)
+        fetch(`https://jhietechnologies-3.onrender.com/api/users/${userId}`)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("User not found or server error");
