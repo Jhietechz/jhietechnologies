@@ -18,9 +18,9 @@ const Comments = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Your Name" value={name} onChange={(e) => setName(e.target.value)} required />
-            <input type="text" placeholder="Your ID" value={IdNo} onChange={(e) => setIdNo(e.target.value)} required />
-            <textarea placeholder="Your Comment" value={country} onChange={(e) => setCountry(e.target.value)} required></textarea>
+            <input type="text" placeholder="Your Name" id="name" value={name} onChange={(e) => setName(e.target.value)} required />
+            <input type="text" placeholder="Your ID" id="IdNo" value={IdNo} onChange={(e) => setIdNo(e.target.value)} required />
+            <textarea placeholder="Your Comment" id="comment" value={country} onChange={(e) => setCountry(e.target.value)} required></textarea>
             <button type="submit">Post Comment</button>
         </form>
     );
