@@ -7,7 +7,7 @@ const Comments = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await fetch('https://jhietechnologies-2.onrender.com/add-comments',
+        await fetch('https://jhietechnologies-3.onrender.com/add-comments',
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
