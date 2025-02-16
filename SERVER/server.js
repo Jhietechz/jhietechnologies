@@ -3,7 +3,7 @@ const db_url = new
     URL(process.env.MYSQL_URL);
 const express = require("express");
 const cors = require("cors");
-app.use(cors({origin: "https://jhietechnologies.netlify.app/"}));
+app.use(cors({origin: "https://jhietechnologies.netlify.app", credentials: true}));
 
 
 const app = express();
