@@ -4,7 +4,16 @@ const db_url = new
 const express = require("express");
 const cors = require("cors");
 app.use(cors({origin: "https://jhietechnologies.netlify.app", credentials: true}));
-
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "https://your-netlify-site.netlify.app");
+    res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    res.header("Access-Control-Allow-Credentials", "true");
+    if (req.method === "OPTIONS") {
+        return res.sendStatus(200);
+    }
+    next();
+});
 
 const app = express();
 app.use(cors());
