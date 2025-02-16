@@ -20,29 +20,29 @@ const Forms = () => {
     };
     return (
    
-<form class="row g-3" onSubmit={handleSubmit}style={{ marginTop:"350px",position:"relative"}}>
-  <div class="col-md-3">
-    <label class="form-label">Full name</label>
-    <input type="text" class="form-control" placeholder="Your Name" id="name" value={name} onChange={(e) => setName(e.target.value)} required/>
+<form className="row g-3" onSubmit={handleSubmit}style={{ marginTop:"350px",position:"relative"}}>
+  <div className="col-md-3">
+    <label className="form-label">Full name</label>
+    <input type="text" className="form-control" placeholder="Your Name" id="name" value={name} onChange={(e) => setName(e.target.value)} required/>
   </div>
-  <div class="col-md-3">
-    <label for="inputPassword4" class="form-label">Email</label>
-    <input type="email" class="form-control" placeholder="Your Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+  <div className="col-md-3">
+    <label for="inputPassword4" className="form-label">Email</label>
+    <input type="email" className="form-control" placeholder="Your Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
   </div>
-  <div class="col-md-2">
-    <label class="form-label">ID</label>
-    <input type="text" class="form-control" placeholder="Your ID" id="IdNo" value={IdNo} onChange={(e) => setIdNo(e.target.value)} required/>
+  <div className="col-md-2">
+    <label className="form-label">ID</label>
+    <input type="text" className="form-control" placeholder="Your ID" id="IdNo" value={IdNo} onChange={(e) => setIdNo(e.target.value)} required/>
   </div>
-  <div class="col-md-2">
-    <label class="form-label">Phone Number</label>
-    <input type="text" class="form-control" placeholder="Phone Number" id="PhoneNo" value={PhoneNo} onChange={(e) => setPhoneNo(e.target.value)} required/>
+  <div className="col-md-2">
+    <label className="form-label">Phone Number</label>
+    <input type="text" className="form-control" placeholder="Phone Number" id="PhoneNo" value={PhoneNo} onChange={(e) => setPhoneNo(e.target.value)} required/>
   </div>
-  <div class="col-md-2">
-    <label  class="form-label">State/County</label>
-    <input type="text" class="form-control" id="county"  value={county} onChange={(e) => setCounty(e.target.value)} required/>
+  <div className="col-md-2">
+    <label  className="form-label">State/County</label>
+    <input type="text" className="form-control" id="county"  value={county} onChange={(e) => setCounty(e.target.value)} required/>
   </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Submit</button>
+  <div className="col-12">
+    <button type="submit" className="btn btn-primary">Submit</button>
   </div>
 </form>
     );
