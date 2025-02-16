@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ReactDOM from 'react-dom/client';
+// import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css"; // For minor custom styles
 import Aside from "./components/Aside";
